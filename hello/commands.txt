@@ -1,0 +1,17 @@
+ServiceMix: (Karaf)
+put the jar in deploy folder it'll automatically install and start.
+>bundle:stop <ID>
+
+
+Felix:
+>installbundle file:../../hello/target/hello-1.0.0.jar
+>lb 	--to list bundles
+>start <ID>
+>stop <ID>
+
+
+Equinox:
+>ss 	--to list bundles
+>install file:../../hello/target/hello-1.0.0.jar
+>start <ID>
+>stop <ID>
